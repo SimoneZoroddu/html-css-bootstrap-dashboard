@@ -42,7 +42,7 @@
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
                     <!-- MANCA IL GRIGIO NEL TESTO -->
-                    <input class="form-control me-sm-2 bg-white" type="text" placeholder="Cerca" />
+                    <input class="form-control me-sm-2 bg-white" type="text" placeholder="Cerca"/>
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
                         Cerca
                     </button>
@@ -63,7 +63,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Titolo</th>
-                                <th scope="col">Data Prestito</th>
+                                <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
                                 <th scope="col">Stato</th>
                                 <th scope="col">Azioni</th>
                             </tr>
@@ -71,7 +71,7 @@
                         <tbody>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -82,7 +82,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -93,7 +93,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>18/10/2023</td>
+                                <td class="d-none d-md-table-cell">18/10/2023</td>
                                 <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -104,7 +104,7 @@
                             </tr>
                             <tr>
                                 <td>Harry Potter e la pietra filosofale</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -115,7 +115,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-danger">Non Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -126,7 +126,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -137,7 +137,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>21/09/2023</td>
+                                <td class="d-none d-md-table-cell">21/09/2023</td>
                                 <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -148,7 +148,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -159,7 +159,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-danger">Non Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -170,7 +170,7 @@
                             </tr>
                             <tr>
                                 <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                                <td>25/07/2023</td>
+                                <td class="d-none d-md-table-cell">25/07/2023</td>
                                 <td><span class="badge rounded-pill text-bg-warning text-white">In prestito</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -181,7 +181,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -192,7 +192,7 @@
                             </tr>
                             <tr>
                                 <td>I pilastri della terra</td>
-                                <td>-</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i
@@ -214,7 +214,8 @@
                                 </li>
                                 <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti
+                                        scaduti</label>
                                 </li>
                                 <li class="list-group-item">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
@@ -311,3 +312,7 @@
 </body>
 
 </html>
+
+
+<d-none></d-none>
+<d-block></d-block>
